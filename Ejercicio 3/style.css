@@ -1,0 +1,29 @@
+* {
+  
+  margin: 10;
+  background-color: bisque;
+}
+
+body {
+ 
+  font-family: Arial;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 300px );  
+  grid-template-rows: repeat(2,200px ); 
+  gap: 10px 30px;     
+                                            
+}
+
+.item {
+  display: grid;
+  place-items: center;     
+  border: 1px solid black;  
+ 
+}
+.item:hover {
+  background-color: rgb(255, 0, 212);
+}

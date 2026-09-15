@@ -1,0 +1,52 @@
+* {
+  
+  margin: 10;
+  background-color: bisque;
+}
+
+body {
+ 
+  font-family: Arial;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 300px );  
+  grid-template-rows: repeat(2,100px ); 
+    gap: 10px;
+                                            
+}
+
+.item {
+  display: grid;
+  place-items: center;     
+  border: 1px solid black;  
+ 
+}
+.item:hover {
+  background-color: rgb(255, 0, 212);
+}
+
+.destacada {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* CARD 2: ocupa 1 columna y 2 filas */
+.card2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+/* CARD 3: ocupa 1 columna y 1 fila */
+.card3 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* CARD 4: ocupa 2 columnas y 1 fila */
+.card4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
